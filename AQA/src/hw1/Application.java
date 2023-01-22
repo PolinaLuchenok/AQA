@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Application {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		System.out.println("Введите, пожалуйста, первое числовое значение!");
+		System.out.println("Введите Введите, пожалуйста, первое числовое значение!");
 		String firstStr = scan.nextLine();
 		
 		RegEx value1 = new RegEx(firstStr);
