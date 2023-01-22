@@ -3,7 +3,6 @@ package hw1;
 import java.util.Scanner;
 
 public class Application {
-
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Введите, пожалуйста, первое числовое значение!");
