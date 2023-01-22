@@ -21,7 +21,7 @@ public class Application {
 		RegEx value2 = new RegEx(secondStr);
 		value2.checkValue();
 		if(value2.checkValue() == false) {
-			System.out.println("ВВы ввели нечисловое значение либо знак \",\"!");
+			System.out.println("Вы ввели нечисловое значение либо знак \",\"!");
 			return;
 		}
 		
