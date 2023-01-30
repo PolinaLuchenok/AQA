@@ -1,4 +1,4 @@
-package hw1;
+package main.java.by.hw1;
 
 import java.util.Scanner;
 
@@ -48,12 +48,18 @@ public class Calculator {
             result = num1*num2;
             break;
         case '/':
-            result = num1/num2;
+        	if (num2 == 0) {
+                System.out.println("Division by zero");
+                return 0;
+            } else {
+            	result = num1 / num2;
+            }
             break;
         default:
-            System.out.println("Operation is not clear. Try again.");
+            System.out.println("Wrong operation. Try again.");
             result = calculate(num1, num2, getOperation());
-    }
-    return result;
+		}
+		return result;
 	}
 }
+
