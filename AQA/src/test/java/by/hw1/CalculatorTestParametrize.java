@@ -25,7 +25,7 @@ public class CalculatorTestParametrize  extends Assert{
 	}
 
 	@Parameterized.Parameters
-	public static Iterable<?> dataForTestSub() {
+	public static Iterable <Object[]> dataForTest() {
 		return Arrays.asList(new Object[][] {{0, 59, '*', 0}, 
 											{10, 2.0, '*', 20},
 											{14.5, 10.1, '*', 146.45},
