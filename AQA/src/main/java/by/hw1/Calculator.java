@@ -37,7 +37,8 @@ public class Calculator {
 	
 	public double calculate(double num1, double num2, char operation) {
 		double result;
-		switch (operation){
+		
+		do {switch (operation){
         case '+':
             result = num1+num2;
             break;
@@ -49,16 +50,20 @@ public class Calculator {
             break;
         case '/':
         	if (num2 == 0) {
-                System.out.println("Division by zero");
-                return 0;
+                 System.out.println("Division by zero");
+                 num2 = getNum();
+                 continue;
             } else {
             	result = num1 / num2;
             }
             break;
         default:
             System.out.println("Wrong operation. Try again.");
-            result = calculate(num1, num2, getOperation());
-		}
+            operation = getOperation();
+            continue;
+			}
+		break;
+		} while (true);
 		return result;
 	}
 }

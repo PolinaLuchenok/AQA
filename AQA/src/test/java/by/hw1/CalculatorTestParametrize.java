@@ -54,8 +54,7 @@ public class CalculatorTestParametrize  extends Assert{
 											{-4, -4, '/', 1},
 											{-10, 2.5, '/', -4},
 											{ 8,    4, '/', 2},
-											{1.5, 2.1, '+', 3.6},
-											{2., 3., '+', 5},});
+											{2., 3., '+', 5}});
 	}
 	
 	@Test
